@@ -22,5 +22,3 @@ Este repositorio contiene la solución programada en Python a los ejercicios de 
 | [**problema_2.py**](./UNIDAD%201/problema_2.py) | **Poisson** | Análisis de probabilidad de ingresos de pacientes a una unidad de cuidados intensivos en un hospital (Tasa λ = 5). |
 | [**problema_3.py**](./UNIDAD%201/problema_3.py) | **Binomial** | Cálculo de probabilidad de encontrar motores defectuosos en un lote de 1,000 unidades para podadoras de pasto. |
 
----
-*Nota: Todos los scripts están desarrollados con la librería estándar de Python (`math`) e incluyen la justificación teórica requerida impresa en consola.*

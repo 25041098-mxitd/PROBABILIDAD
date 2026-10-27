@@ -17,7 +17,6 @@ def calcular_z(x, mu, sigma):
 
 def normal_cdf(z):
     """Calcula el área bajo la curva (probabilidad acumulada)."""
-    # Función de error para calcular la probabilidad normal
     return (1.0 + math.erf(z / math.sqrt(2.0))) / 2.0
 
 def main():
@@ -25,27 +24,23 @@ def main():
     print(" PROBLEMA 1: Distribución Normal de Pesos (ITD)")
     print("=" * 60)
     
-    # Datos del problema
-    mu = 70      # Media poblacional
-    sigma = 4    # Desviación estándar
-    N = 500      # Población total de estudiantes
+    mu = 70      
+    sigma = 4    
+    N = 500      
     
-    # Límites de peso a evaluar
+    
     x1 = 68
     x2 = 72
     
-    # 1. Transformación a valores Z
+    
     z1 = calcular_z(x1, mu, sigma)
     z2 = calcular_z(x2, mu, sigma)
     
-    # 2. Búsqueda de probabilidad acumulada
     prob_z1 = normal_cdf(z1)
     prob_z2 = normal_cdf(z2)
     
-    # 3. Resta de límites para el área central
     prob_total = prob_z2 - prob_z1
     
-    # 4. Cálculo de cantidad de estudiantes (redondeado)
     estudiantes = round(prob_total * N)
     
     print("\n[ DATOS INICIALES ]")

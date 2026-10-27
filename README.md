@@ -4,7 +4,7 @@
 
 ---
 
-### 👨‍💻 Datos del Alumno
+### Datos del Alumno
 * **Autor:** Vargas Calderón Yahir Fernando
 * **Número de Control:** 25041098
 * **Carrera:** Ingeniería en Sistemas Computacionales
@@ -12,7 +12,7 @@
 
 ---
 
-### 📂 Contenido de la Unidad 1
+### Contenido de la Unidad 1
 
 Este repositorio contiene la solución programada en Python a los ejercicios de la **Unidad 1** sobre Distribuciones de Probabilidad, cumpliendo con los requerimientos académicos solicitados.
 

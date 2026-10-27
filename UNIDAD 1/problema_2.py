@@ -20,7 +20,7 @@ def main():
     print(" PROBLEMA 2: Unidad de Cuidados Intensivos (Hospital)")
     print("=" * 60)
     
-    # JUSTIFICACIÓN TEÓRICA
+    
     print("\n[JUSTIFICACIÓN]")
     print("La solución es de tipo POISSON.")
     print("¿Por qué? Primero, porque el enunciado lo establece explícitamente[cite: 409].")
@@ -28,18 +28,14 @@ def main():
     print("que ocurren en un intervalo de tiempo continuo (un día), conociendo una tasa ")
     print("promedio de ocurrencia (\u03bb = 5 personas por día).")
     
-    # Datos del problema
     lmbda = 5
     
-    # a). Probabilidad de que sean exactamente 2 personas
     prob_2 = probabilidad_poisson(lmbda, 2)
     print("\na). ¿Cuál es la probabilidad de que el número de personas sea 2?")
     print(f"    P(X = 2) = {prob_2:.6f} (Aprox. {prob_2 * 100:.2f}%)")
     
-    # b). Probabilidad de que x exceda de 10
-    # P(x > 10) = 1 - P(x <= 10)
     prob_acumulada = 0
-    for i in range(11):  # Sumatoria de P(X=0) hasta P(X=10)
+    for i in range(11):  
         prob_acumulada += probabilidad_poisson(lmbda, i)
         
     prob_mayor_10 = 1 - prob_acumulada

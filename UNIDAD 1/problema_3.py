@@ -13,7 +13,6 @@ import math
 
 def probabilidad_binomial(n, x, p):
     """Calcula la probabilidad usando la fórmula Binomial."""
-    # math.comb(n, x) calcula las combinaciones: n! / (x! * (n-x)!)
     return math.comb(n, x) * (p ** x) * ((1 - p) ** (n - x))
 
 def main():
@@ -21,7 +20,6 @@ def main():
     print(" PROBLEMA 3: Motores de Podadoras para Pasto")
     print("=" * 60)
     
-    # JUSTIFICACIÓN TEÓRICA
     print("\n[JUSTIFICACIÓN]")
     print("La solución es de tipo BINOMIAL.")
     print("¿Por qué? Porque tenemos un número fijo y determinado de ensayos independientes")
@@ -31,11 +29,9 @@ def main():
     print("*(Nota: Por ser n grande y p pequeña, también podría aproximarse por Poisson, ")
     print("pero conceptualmente cumple las 4 propiedades del experimento Binomial).*")
     
-    # Datos del problema
     n = 1000
     p = 0.001
     
-    # Cálculos
     prob_0 = probabilidad_binomial(n, 0, p)
     prob_3 = probabilidad_binomial(n, 3, p)
     prob_4 = probabilidad_binomial(n, 4, p)

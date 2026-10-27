@@ -12,7 +12,7 @@
 
 ---
 
-### Contenido de la Unidad 1
+### Contenido de la Carpeta Unidad 1 (De la Unidad IV)
 
 Este repositorio contiene la solución programada en Python a los ejercicios de la **Unidad 1** sobre Distribuciones de Probabilidad, cumpliendo con los requerimientos académicos solicitados.
 

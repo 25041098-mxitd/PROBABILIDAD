@@ -1,6 +1,6 @@
 # 🏛️ Instituto Tecnológico de Durango
 ## Departamento de Sistemas y Computación
-### Probabilidad y Estadística — Unidad 1
+### Probabilidad y Estadística — Unidad IV
 
 ---
 

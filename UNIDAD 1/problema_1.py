@@ -27,20 +27,15 @@ def main():
     mu = 70      
     sigma = 4    
     N = 500      
-    
-    
     x1 = 68
     x2 = 72
-    
     
     z1 = calcular_z(x1, mu, sigma)
     z2 = calcular_z(x2, mu, sigma)
     
     prob_z1 = normal_cdf(z1)
     prob_z2 = normal_cdf(z2)
-    
     prob_total = prob_z2 - prob_z1
-    
     estudiantes = round(prob_total * N)
     
     print("\n[ DATOS INICIALES ]")
@@ -61,3 +56,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+============================================================
+ RESULTADOS DE EJECUCIÓN (SALIDA EN CONSOLA)
+============================================================
+[ DATOS INICIALES ]
+- Media (μ) = 70 kg
+- Desviación estándar (σ) = 4 kg
+
+[ DESARROLLO Y CÁLCULOS ]
+- Límite inferior (68 kg) -> Z1 = -0.50
+- Límite superior (72 kg) -> Z2 = 0.50
+
+[ CONCLUSIÓN ]
+La probabilidad de que un estudiante pese entre 68 y 72 kg es:
+P(-0.50 < Z < 0.50) = 0.3829 (Es decir, el 38.29%)
+
+Multiplicando por la población total (500 estudiantes):
+500 x 0.3829 = 191.5
+Se estima que aproximadamente 191 estudiantes pesan dentro de este rango.
+============================================================
+"""

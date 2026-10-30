@@ -25,9 +25,7 @@ def main():
     print("¿Por qué? Porque tenemos un número fijo y determinado de ensayos independientes")
     print("en un lote (n = 1,000 motores). En cada ensayo solo hay dos resultados posibles:")
     print("el motor es defectuoso o no lo es. Además, la probabilidad de éxito (defecto)")
-    print("se mantiene constante para cada motor analizado (p = 0.001)[cite: 410].")
-    print("*(Nota: Por ser n grande y p pequeña, también podría aproximarse por Poisson, ")
-    print("pero conceptualmente cumple las 4 propiedades del experimento Binomial).*")
+    print("se mantiene constante para cada motor analizado (p = 0.001).")
     
     n = 1000
     p = 0.001
@@ -49,3 +47,27 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+============================================================
+ RESULTADOS DE EJECUCIÓN (SALIDA EN CONSOLA)
+============================================================
+[JUSTIFICACIÓN]
+La solución es de tipo BINOMIAL.
+¿Por qué? Porque tenemos un número fijo y determinado de ensayos independientes
+en un lote (n = 1,000 motores). En cada ensayo solo hay dos resultados posibles:
+el motor es defectuoso o no lo es. Además, la probabilidad de éxito (defecto)
+se mantiene constante para cada motor analizado (p = 0.001).
+
+Cálculos para un embarque de 1,000 motores:
+
+1. ¿Cuál es la probabilidad de que ninguno sea defectuoso?
+   P(X = 0) = 0.367695 (Aprox. 36.77%)
+
+2. ¿Cuál es la probabilidad de que tres sean defectuosos?
+   P(X = 3) = 0.061283 (Aprox. 6.13%)
+
+3. ¿Cuál es la probabilidad de que cuatro sean defectuosos?
+   P(X = 4) = 0.015290 (Aprox. 1.53%)
+============================================================
+"""
